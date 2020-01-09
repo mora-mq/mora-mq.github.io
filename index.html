@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Script source -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Meng's</title>
+
+</head>
+  
+<!-- Theme https://www.youtube.com/watch?v=Ht1F9KuhJO4 -->
+<body data-spy="scroll" data-target="#menu">
+  <!-- Home section -->
+  <div id="home">
+
+  <nav class="navbar navbar-light navbar-transparent navbar-expand-md fixed-top"> 
+    <div class="container-fluid">
+       <a class="navbar-brand" href="#">
+        <img src="image/logo.png" width="40" height="40" alt="logo">
+       </a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="menu">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="#work">Work</a>
+          <a class="nav-item nav-link" href="#about">About</a>
+          <a class="nav-item nav-link" href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="landing">
+      <div class="home-wrap">
+          <div class="home-inner">
+          </div>
+      </div>
+  </div>
+
+  <div class="caption center-block text-center">
+    <h3>A UI/UX Designer Wannabe</h3>
+    <a href="#work" class="btn btn-outline-dark">Learn More</a>
+  </div>
+
+  </div>
+
+  <!-- Work section -->
+  <div id="work">
+  <div class="container-fluid">
+      <h3 class="heading">Works</h3>
+  
+  <div class="row no-padding">
+      <div class="col-md-4">
+          <a href="https://dribbble.com/shots/9395326-Clock-app?utm_source=Clipboard_Shot&utm_campaign=Mora_mq&utm_content=Clock%20app&utm_medium=Social_Share" target="_blank">
+            <img src="image/01.png" alt="clock" class="work">
+          </a>
+      </div>
+      <div class="col-md-4">
+          <a href="https://dribbble.com/shots/9395510-Animal-Fun-Facts?utm_source=Clipboard_Shot&utm_campaign=Mora_mq&utm_content=Animal%20Fun%20Facts&utm_medium=Social_Share" target="_blank">
+            <img src="image/02.png" alt="animal" class="work">
+          </a>
+    </div>
+    <div class="col-md-4">
+          <a href="https://dribbble.com/shots/9395519-Travel-Web?utm_source=Clipboard_Shot&utm_campaign=Mora_mq&utm_content=Travel%20Web&utm_medium=Social_Share" target="_blank">
+            <img src="image/03.png" alt="travel" class="work">
+          </a>
+    </div>
+    <div class="col-md-4">
+          <a href="https://dribbble.com/shots/9395535-Takeout-app?utm_source=Clipboard_Shot&utm_campaign=Mora_mq&utm_content=Takeout%20app&utm_medium=Social_Share" target="_blank">
+            <img src="image/04.png" alt="takeout" class="work">
+          </a>
+    </div>
+    <div class="col-md-4">
+          <a href="https://dribbble.com/shots/9395484-Organic-shop?utm_source=Clipboard_Shot&utm_campaign=Mora_mq&utm_content=Organic%20shop&utm_medium=Social_Share" target="_blank">
+            <img src="image/05.png" alt="organic" class="work">
+          </a>
+    </div>
+    <div class="col-md-4">
+        <img src="image/06.png" alt="travel02" class="work">
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- About section -->
+  <div id="about">
+      <h3 class="heading">About</h3>
+  <div class="row no-padding">
+    <div class="col-md-6">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Privately</strong></h5>
+            <p class="card-text">Visual Art Enthusiast</p>
+            <a href="https://www.instagram.com/mora_mq/" class="btn btn-light" target="_blank">Portfolio</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card text-center">
+          <div class="card-body">
+            <h5 class="card-title"><strong>Professional</strong></h5>
+            <p class="card-text">A Passion for HCI</p>
+            <a href="uniproject.html" class="btn btn-light">Uni Projects</a>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+
+  <!-- Contact -->
+  <div id="contact">
+      <div class="container-fluid center-block text-center">
+        <p>Contact me at: </p> 
+        <p class="lead" id="p1">moramengqi@gmail.com</p>
+
+        <div class="container-md">
+            <button type="button" class="btn btn-outline-dark" data-toggle="popover" data-placement="bottom" data-content="Copied :)" onclick="copyToClipboard('p1')">Copy Email</button>
+
+        </div>   
+      </div>
+    <!-- click to copy -->
+    <!-- Source https://stackoverflow.com/a/30905277 -->
+    <!-- Source https://www.w3schools.com/howto/howto_js_copy_clipboard.asp -->
+        <script>        
+            function copyToClipboard(elementId) {
+
+            // Create a "hidden" input
+            var aux = document.createElement("input");
+
+            // Assign it the value of the specified element
+            aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+
+            // Append it to the body
+            document.body.appendChild(aux);
+
+            // Highlight its content
+            aux.select();
+
+            // Copy the highlighted text
+            document.execCommand("copy");
+
+            // Remove it from the body
+            document.body.removeChild(aux);
+            
+            // Alert the copied text 
+            //alert("Copied :)");
+
+         }
+        </script>
+
+        <script>
+            $(document).ready(function(){
+              $('[data-toggle="popover"]').popover();
+         });
+         </script>
+  </div>
+
+
+</body>
+</html>
